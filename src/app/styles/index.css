@@ -1,0 +1,14 @@
+@import "./vars.css";
+@import "./typography.css";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

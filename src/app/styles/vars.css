@@ -1,0 +1,27 @@
+:root {
+  /*------------------шрифты--------------------*/
+  --font-family-main: "Graphik LCG";
+
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 18px;
+
+  --bold-weight: 600;
+
+  /*------------------цвета--------------------*/
+  --black: #191c1f;
+  --dark-gray: #5e646a;
+  --gray: #83898f;
+  --mid-gray: #c2c8cd;
+  --light-gray: #eceff2;
+  --extra-light-gray: #f6f8fa;
+  --white: #ffffff;
+
+  --dangerous: #f13636;
+  --success: #25cd82;
+
+  --primary-disabled: #abcae6;
+  --primary: #2a6cea;
+  --primary-hover: #397dff;
+}

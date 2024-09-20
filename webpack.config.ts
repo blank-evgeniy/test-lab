@@ -1,5 +1,6 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import webpack from "webpack";
 
 const config = {
@@ -12,15 +13,15 @@ const config = {
   },
 
   devServer: {
-    static: {
-      directory: path.join(__dirname, "public"),
-    },
-    compress: true,
-    port: 9000,
+    port: 3000,
   },
 
   module: {
     rules: [
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
       {
         test: /\.tsx?$/,
         use: "ts-loader",
@@ -38,6 +39,7 @@ const config = {
       template: path.resolve(__dirname, "public", "index.html"),
     }),
     new webpack.ProgressPlugin(),
+    new MiniCssExtractPlugin({ filename: "[name].css" }),
   ],
 };
 
