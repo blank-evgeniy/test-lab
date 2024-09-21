@@ -10,6 +10,10 @@
   transition: background-color 0.2s ease-in;
 }
 
+.button:disabled {
+  cursor: default;
+}
+
 .button_blue {
   color: var(--white);
   background-color: var(--primary);

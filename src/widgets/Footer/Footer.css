@@ -1,0 +1,12 @@
+.footer {
+  border-top: 1px solid var(--light-gray);
+}
+
+.footer__content {
+  text-align: center;
+
+  font-size: var(--font-size-l);
+  line-height: 32px;
+
+  padding: 28px 0;
+}

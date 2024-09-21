@@ -1,0 +1,56 @@
+.input-container {
+  position: relative;
+
+  font-size: var(--font-size-l);
+  height: 64px;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+
+  background-color: var(--extra-light-gray);
+}
+
+.input {
+  background-color: inherit;
+  outline: none;
+  line-height: 32px;
+  font-size: var(--font-size-l);
+}
+
+.input-container.focused {
+  background-color: var(--white);
+  outline: solid var(--mid-gray);
+}
+
+.input-container.is-ok {
+  background-color: var(--white);
+  outline: solid var(--light-gray);
+}
+
+.input-container.is-cancel {
+  outline: solid var(--dangerous);
+}
+
+.input-hint {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gray);
+}
+
+.input-helpertext {
+  color: var(--dangerous);
+  position: absolute;
+  line-height: 16px;
+  font-size: var(--font-size-xs);
+  bottom: -21px;
+  left: 0px;
+}
+
+.input-cancel,
+.input-ok {
+  position: absolute;
+  right: 16px;
+}
