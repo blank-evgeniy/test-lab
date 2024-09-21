@@ -1,0 +1,38 @@
+.header {
+  position: absolute;
+  top: 0;
+
+  color: var(--white);
+
+  max-width: 1216px;
+  width: 100%;
+  height: 80px;
+
+  padding: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  font-weight: var(--bold-weight);
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.header__links {
+  display: flex;
+  gap: 24px;
+}
+
+.header__link {
+  color: var(--white);
+}
+
+.header__link:hover {
+  border-bottom: 1px solid var(--white);
+}

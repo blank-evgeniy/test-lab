@@ -24,11 +24,12 @@
 }
 
 .button_gray {
+  border: 1px solid var(--light-gray);
   background-color: var(--light-gray);
   color: var(--black);
 }
 
 .button_gray:hover {
-  border: 1px solid var(--mid-gray);
+  border-color: var(--mid-gray);
   background-color: var(--white);
 }

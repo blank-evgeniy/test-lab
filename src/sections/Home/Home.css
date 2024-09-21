@@ -1,0 +1,32 @@
+.home {
+  overflow: hidden;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: inset 0 0 0 2000px rgba(42, 108, 234, 0.8);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home__content {
+  max-width: 748px;
+
+  text-align: center;
+  color: var(--white);
+}
+
+.home__title {
+  padding-bottom: 18px;
+}
+
+.home__subtitle {
+  font-size: var(--font-size-l);
+  padding-bottom: 92px;
+}
+
+.test {
+  position: relative;
+}
