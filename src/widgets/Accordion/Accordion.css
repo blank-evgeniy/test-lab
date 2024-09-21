@@ -1,0 +1,32 @@
+.accordion__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion__head:hover {
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.accordion__title {
+  padding: 24px 0;
+  font-weight: var(--bold-weight);
+  font-size: var(--font-size-l);
+}
+
+.accordion__line {
+  height: 0;
+  border: none;
+  border-top: 1px solid var(--light-gray);
+}
+
+.accordion__content {
+  padding-bottom: 24px;
+  padding-right: 72px;
+
+  line-height: 32px;
+  font-size: var(--font-size-l);
+
+  color: var(--dark-gray);
+}

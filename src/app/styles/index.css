@@ -27,3 +27,8 @@ ul,
 ul li {
   list-style: none;
 }
+
+button {
+  background-color: inherit;
+  cursor: pointer;
+}

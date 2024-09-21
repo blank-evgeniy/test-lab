@@ -1,4 +1,5 @@
 import Home from "../sections/Home/Home";
+import Qeustions from "../sections/Qeustions/Qeustions";
 import Reviews from "../sections/Reviews/Reviews";
 import TaskPlan from "../sections/TaskPlan/TaskPlan";
 import ThirdBlock from "../sections/ThirdBlock/ThirdBlock";
@@ -11,6 +12,7 @@ const App = () => {
       <TaskPlan />
       <ThirdBlock />
       <Reviews />
+      <Qeustions />
     </main>
   );
 };
