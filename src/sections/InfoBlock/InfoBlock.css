@@ -1,0 +1,25 @@
+.container {
+  background-color: var(--extra-light-gray);
+}
+
+.info-block {
+  padding: 68px 0;
+  width: 1216px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 37px 32px;
+}
+
+.info-block__section-title {
+  font-weight: var(--bold-weight);
+  font-size: var(--font-size-l);
+  line-height: 32px;
+
+  padding-bottom: 17px;
+}
+
+.info-block__section-content {
+  line-height: 28px;
+}

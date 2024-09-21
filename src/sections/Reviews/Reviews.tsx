@@ -9,8 +9,8 @@ const Reviews = () => {
       <div className="reviews">
         <h2 className="reviews__title">Отзывы</h2>
         <Carousel>
-          {ReviewList.map((review) => (
-            <div>
+          {ReviewList.map((review, index) => (
+            <div key={index}>
               <ReviewCard {...review} />
             </div>
           ))}

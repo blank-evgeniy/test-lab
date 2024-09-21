@@ -25,7 +25,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
         const isCollapsed = index === collapsedId;
 
         return (
-          <div className={"accordion__item"}>
+          <div className={"accordion__item"} key={index}>
             <div className="accordion__line" />
 
             <div
