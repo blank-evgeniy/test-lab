@@ -1,0 +1,17 @@
+.container {
+  background-color: var(--extra-light-gray);
+}
+
+.reviews {
+  padding-top: 25px;
+  padding-bottom: 45px;
+  width: 1216px;
+  margin: 0 auto;
+  background-color: var(--extra-light-gray);
+}
+
+.reviews__title {
+  line-height: 56px;
+  text-align: center;
+  padding-bottom: 32px;
+}

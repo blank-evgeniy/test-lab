@@ -9,7 +9,7 @@ const TaskPlan = () => {
       <h2 className="plan__title">Как это работает</h2>
       <div className="plan__list">
         {PlanItems.map((item) => (
-          <PlanItemCard {...item} />
+          <PlanItemCard {...item} key={item.title} />
         ))}
       </div>
     </section>
