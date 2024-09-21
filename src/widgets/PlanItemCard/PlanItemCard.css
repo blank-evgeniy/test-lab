@@ -1,0 +1,14 @@
+.plan-card {
+  max-width: 280px;
+}
+
+.plan-card__content {
+  font-size: var(--font-size-s);
+  line-height: 24px;
+  color: var(--dark-gray);
+}
+
+.plan-card__title {
+  padding-top: 16px;
+  line-height: 24px;
+}
