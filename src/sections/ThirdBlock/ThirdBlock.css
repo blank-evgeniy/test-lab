@@ -1,0 +1,33 @@
+.third-block {
+  padding-bottom: 80px;
+  width: 1216px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.third-block__content {
+  width: 50%;
+}
+
+.third-block__title {
+  line-height: 40px;
+  padding-bottom: 15px;
+}
+
+.third-block__paragraph {
+  line-height: 28px;
+  color: var(--dark-gray);
+}
+
+.third-block__picture {
+  position: relative;
+}
+
+.third-block__back-picture {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}

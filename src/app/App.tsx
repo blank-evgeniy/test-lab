@@ -1,5 +1,6 @@
 import Home from "../sections/Home/Home";
 import TaskPlan from "../sections/TaskPlan/TaskPlan";
+import ThirdBlock from "../sections/ThirdBlock/ThirdBlock";
 import "./styles/index.css";
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <main>
       <Home />
       <TaskPlan />
+      <ThirdBlock />
     </main>
   );
 };
