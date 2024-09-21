@@ -24,4 +24,11 @@
   --primary-disabled: #abcae6;
   --primary: #2a6cea;
   --primary-hover: #397dff;
+
+  /*------------------breakpoints--------------------*/
+  --laptop: 1200px;
+  --table: 1024px;
+  --mobile-l: 768px;
+  --mobile-m: 375px;
+  --mobile-s: 320px;
 }

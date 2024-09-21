@@ -1,7 +1,17 @@
 import "./Header.css";
 import Logo from "./../../img/logo.svg";
+import MenuOpen from "./../../img/menu_open.svg";
+import MenuClose from "./../../img/menu_close.svg";
+import MenuLink from "./../../img/menu_link.svg";
+import { useState } from "react";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = (opened: boolean) => {
+    setIsOpen(opened);
+  };
+
   return (
     <header className="header">
       <div className="header__logo">
@@ -31,7 +41,53 @@ const Header = () => {
             </a>
           </li>
         </ul>
+        <button className="header__open">
+          <MenuOpen onClick={() => handleOpen(true)} />
+        </button>
       </nav>
+
+      {isOpen && (
+        <div className="header-mobile">
+          <div className="header-mobile__logo">
+            <Logo />
+            testLab
+          </div>
+          <ul className="header-mobile__links">
+            <hr className="line" />
+            <li>
+              <a className="header-mobile__link" href="#">
+                Как это работает
+                <MenuLink />
+              </a>
+            </li>
+            <hr className="line" />
+            <li>
+              <a className="header-mobile__link" href="#">
+                3-й блок
+                <MenuLink />
+              </a>
+            </li>
+            <hr className="line" />
+            <li>
+              <a className="header-mobile__link" href="#">
+                Вопросы и ответы
+                <MenuLink />
+              </a>
+            </li>
+            <hr className="line" />
+            <li>
+              <a className="header-mobile__link" href="#">
+                Форма
+                <MenuLink />
+              </a>
+            </li>
+            <hr className="line" />
+          </ul>
+          <button className="header__close">
+            <MenuClose onClick={() => handleOpen(false)} />
+          </button>
+        </div>
+      )}
     </header>
   );
 };

@@ -5,8 +5,8 @@ import "./Reviews.css";
 
 const Reviews = () => {
   return (
-    <section className="container">
-      <div className="reviews">
+    <div className="container_gray">
+      <section className="reviews">
         <h2 className="reviews__title">Отзывы</h2>
         <Carousel>
           {ReviewList.map((review, index) => (
@@ -15,8 +15,8 @@ const Reviews = () => {
             </div>
           ))}
         </Carousel>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

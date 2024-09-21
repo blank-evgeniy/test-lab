@@ -26,7 +26,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
 
         return (
           <div className={"accordion__item"} key={index}>
-            <div className="accordion__line" />
+            <div className="line" />
 
             <div
               onClick={() => handleCollapse(index)}
@@ -40,7 +40,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
               <p className="accordion__content">{item.content}</p>
             )}
 
-            <div className="accordion__line" />
+            <div className="line" />
           </div>
         );
       })}

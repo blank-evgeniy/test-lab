@@ -60,45 +60,47 @@ const FormSection = () => {
   const formCorrect = checkCorrect && nameCorrect && telephoneCorrect;
 
   return (
-    <section className="form-section">
-      <h2 className="form-section__title">Отправь форму</h2>
+    <div className="container">
+      <section className="form-section">
+        <h2 className="form-section__title">Отправь форму</h2>
 
-      <form className="form-section__form" onSubmit={handleSubmit}>
-        <TextInput
-          helpertext="Введите не менее 5 символов"
-          hint="Имя"
-          placeholder="Имя"
-          validation={nameValidation}
-        />
-        <TextInput
-          helpertext="Введите номер телефона"
-          hint="Телефон"
-          placeholder="Телефон"
-          validation={telephoneValidation}
-        />
-
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <input
-            className="form-section__checkbox"
-            type="checkbox"
-            id="agree"
-            name="agree"
-            defaultChecked={false}
-            onChange={() => setCheckCorrect((prev) => !prev)}
+        <form className="form-section__form" onSubmit={handleSubmit}>
+          <TextInput
+            helpertext="Введите не менее 5 символов"
+            hint="Имя"
+            placeholder="Имя"
+            validation={nameValidation}
           />
-          <label className="form-section__checkbox-label" htmlFor="agree">
-            Согласен, отказываюсь
-          </label>
-        </div>
-        <Button
-          disabled={!formCorrect}
-          className="form-section__submit"
-          type="submit"
-        >
-          Отправить
-        </Button>
-      </form>
-    </section>
+          <TextInput
+            helpertext="Введите номер телефона"
+            hint="Телефон"
+            placeholder="Телефон"
+            validation={telephoneValidation}
+          />
+
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <input
+              className="form-section__checkbox"
+              type="checkbox"
+              id="agree"
+              name="agree"
+              defaultChecked={false}
+              onChange={() => setCheckCorrect((prev) => !prev)}
+            />
+            <label className="form-section__checkbox-label" htmlFor="agree">
+              Согласен, отказываюсь
+            </label>
+          </div>
+          <Button
+            disabled={!formCorrect}
+            className="form-section__submit"
+            type="submit"
+          >
+            Отправить
+          </Button>
+        </form>
+      </section>
+    </div>
   );
 };
 
