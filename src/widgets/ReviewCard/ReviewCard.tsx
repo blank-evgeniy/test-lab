@@ -9,7 +9,7 @@ const ReviewCard: React.FC<Review> = ({
   content,
 }) => {
   return (
-    <div className="review-card">
+    <div className="review-card carousel-item">
       <div className="review-card__header">
         <img className="review-card__avatar" src={avatar} />
         <div className="review-card__info">
