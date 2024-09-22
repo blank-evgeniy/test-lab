@@ -1,6 +1,7 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import CopyWebpackPlugin from "copy-webpack-plugin";
 import webpack from "webpack";
 
 export interface BuildEnv {
@@ -65,6 +66,9 @@ export default (env: BuildEnv) => {
       }),
       new webpack.ProgressPlugin(),
       new MiniCssExtractPlugin({ filename: "[name].css" }),
+      new CopyWebpackPlugin({
+        patterns: [{ from: "src/404.html", to: "404.html" }],
+      }),
     ],
   };
 
