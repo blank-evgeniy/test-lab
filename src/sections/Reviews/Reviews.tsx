@@ -1,6 +1,7 @@
 import ReviewList from "../../data/ReviewsList";
 import Carousel from "../../widgets/Carousel/Carousel";
 import ReviewCard from "../../widgets/ReviewCard/ReviewCard";
+
 import "./Reviews.css";
 
 const Reviews = () => {

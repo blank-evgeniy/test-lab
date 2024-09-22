@@ -1,4 +1,5 @@
 import { Review } from "../../data/ReviewsList";
+
 import "./ReviewCard.css";
 
 const ReviewCard: React.FC<Review> = ({

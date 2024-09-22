@@ -39,13 +39,16 @@ export default (env: BuildEnv) => {
           use: ["@svgr/webpack"],
         },
         {
-          test: /\.(png|jpg|gif)$/,
+          test: /\.(png|jpg|gif)$/i,
           use: [
             {
-              loader: "file-loader",
-              options: {},
+              loader: "url-loader",
+              options: {
+                limit: 8192,
+              },
             },
           ],
+          type: "javascript/auto",
         },
       ],
     },

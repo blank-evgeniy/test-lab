@@ -1,7 +1,9 @@
-import React, { useState } from "react";
-import OkIcon from "../../img/ok.svg";
-import CanselIcon from "../../img/cancel.svg";
+import { useState } from "react";
 import classNames from "classnames";
+
+import OkIcon from "../../img/form/ok.svg";
+import CanselIcon from "../../img/form/cancel.svg";
+
 import "./TextInput.css";
 
 interface TextInputProps extends React.InputHTMLAttributes<HTMLInputElement> {

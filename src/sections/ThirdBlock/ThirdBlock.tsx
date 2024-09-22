@@ -1,6 +1,7 @@
+import FrontImage from "../../img/third-block/thirdblock-front.png";
+import BackImage from "../../img/third-block/thirdblock-back.png";
+
 import "./ThirdBlock.css";
-import FrontImage from "../../img/thirdblock-front.png";
-import BackImage from "../../img/thirdblock-back.png";
 
 const ThirdBlock = () => {
   return (

@@ -1,7 +1,9 @@
 import { useState } from "react";
+
+import OpenIcon from "../../img/questions/open.svg";
+import CloseIcon from "../../img/questions/close.svg";
+
 import "./Accordion.css";
-import OpenIcon from "../../img/open.svg";
-import CloseIcon from "../../img/close.svg";
 
 export interface AccordionItem {
   title: string;

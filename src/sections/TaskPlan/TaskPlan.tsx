@@ -1,7 +1,7 @@
-import "./TaskPlan.css";
-
 import PlanItemCard from "../../widgets/PlanItemCard/PlanItemCard";
 import PlanItems from "../../data/PlanItems";
+
+import "./TaskPlan.css";
 
 const TaskPlan = () => {
   return (

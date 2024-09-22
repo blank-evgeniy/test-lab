@@ -1,9 +1,11 @@
-import "./Header.css";
-import Logo from "./../../img/logo.svg";
-import MenuOpen from "./../../img/menu_open.svg";
-import MenuClose from "./../../img/menu_close.svg";
-import MenuLink from "./../../img/menu_link.svg";
 import { useState } from "react";
+
+import Logo from "./../../img/header/logo.svg";
+import MenuOpen from "./../../img/header/menu_open.svg";
+import MenuClose from "./../../img/header/menu_close.svg";
+import MenuLink from "./../../img/header/menu_link.svg";
+
+import "./Header.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

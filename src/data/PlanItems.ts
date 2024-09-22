@@ -1,9 +1,9 @@
 import { PlanItem } from "../widgets/PlanItemCard/PlanItemCard";
 
-import WaitingIcon from "./../img/waiting.png";
-import TruckIcon from "./../img/delivery-truck.png";
-import BagsIcon from "./../img/money-bags.png";
-import SecureIcon from "./../img/secure.png";
+import WaitingIcon from "./../img/plan/waiting.png";
+import TruckIcon from "./../img/plan/delivery-truck.png";
+import BagsIcon from "./../img/plan/money-bags.png";
+import SecureIcon from "./../img/plan/secure.png";
 
 const PlanItems: PlanItem[] = [
   {

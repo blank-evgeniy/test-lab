@@ -1,4 +1,5 @@
 import InfoBlockData from "../../data/InfoBlockData";
+
 import "./InfoBlock.css";
 
 const InfoBlock = () => {

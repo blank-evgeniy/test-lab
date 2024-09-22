@@ -1,10 +1,10 @@
 import Slider from "react-slick";
 
+import LeftArrow from "../../img/reviews/left-arrow.svg";
+import RightArrow from "../../img/reviews/right-arrow.svg";
+
 import "./slick.css";
 import "./slick-theme.css";
-
-import LeftArrow from "../../img/left-arrow.svg";
-import RightArrow from "../../img/right-arrow.svg";
 
 interface CarouselProps {
   children: React.ReactNode;

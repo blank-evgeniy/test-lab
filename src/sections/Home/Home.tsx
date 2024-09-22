@@ -1,9 +1,8 @@
 import Button, { ButtonTheme } from "../../shared/Button/Button";
 import Header from "../../widgets/Header/Header";
-import bg from "../../img/home_bg.png";
+import bg from "../../img/home/home-bg.jpg";
 
 import "./Home.css";
-import { url } from "inspector";
 
 const Home = () => {
   return (
