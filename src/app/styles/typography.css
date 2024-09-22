@@ -36,3 +36,22 @@ body {
   font-size: var(--font-size-m);
   color: var(--black);
 }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+}

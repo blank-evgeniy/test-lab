@@ -5,7 +5,7 @@ import BackImage from "../../img/thirdblock-back.png";
 const ThirdBlock = () => {
   return (
     <div className="container">
-      <section className="third-block">
+      <section className="third-block" id="third-block">
         <div className="third-block__content">
           <h3 className="third-block__title">
             Круто, ты дошел до третьего блока

@@ -36,6 +36,24 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow className="carousel__prev-btn" />,
     prevArrow: <SamplePrevArrow className="carousel__prev-btn" />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
   };
   return (
     <div className="slider-container">

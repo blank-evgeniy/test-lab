@@ -1,6 +1,6 @@
 .accordion__head {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -9,8 +9,14 @@
   color: var(--primary);
 }
 
+.accordion__btn {
+  position: absolute;
+  right: 0;
+}
+
 .accordion__title {
   padding: 24px 0;
+  padding-right: 44px;
   font-weight: var(--bold-weight);
   font-size: var(--font-size-l);
 }
@@ -23,4 +29,11 @@
   font-size: var(--font-size-l);
 
   color: var(--dark-gray);
+}
+
+@media screen and (max-width: 375px) {
+  .accordion__content {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }

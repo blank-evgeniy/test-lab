@@ -1,6 +1,7 @@
 .plan {
   padding: 80px 0px;
-  width: 1216px;
+  max-width: 1216px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -11,5 +12,19 @@
 }
 
 .plan__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+@media screen and (max-width: 1024px) {
+  .plan__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .plan__list {
+    grid-template-columns: 1fr;
+  }
 }

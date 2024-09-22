@@ -61,7 +61,7 @@ const FormSection = () => {
 
   return (
     <div className="container">
-      <section className="form-section">
+      <section className="form-section" id="form">
         <h2 className="form-section__title">Отправь форму</h2>
 
         <form className="form-section__form" onSubmit={handleSubmit}>

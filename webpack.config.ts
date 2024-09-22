@@ -3,57 +3,67 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import webpack from "webpack";
 
-const config = {
-  mode: "development",
+export interface BuildEnv {
+  mode: "production" | "development";
+}
 
-  entry: path.resolve(__dirname, "src", "index.tsx"),
+export default (env: BuildEnv) => {
+  const config = {
+    //------------------build-----------------------
+    mode: env.mode || "development",
 
-  output: {
-    path: path.resolve(__dirname, "dist"),
-  },
+    entry: path.resolve(__dirname, "src", "index.tsx"),
 
-  devServer: {
-    port: 3000,
-  },
+    output: {
+      path: path.resolve(__dirname, "dist"),
+    },
 
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
-      },
-      {
-        test: /\.tsx?$/,
-        use: "ts-loader",
-        exclude: /node_modules/,
-      },
-      {
-        test: /\.svg$/,
-        use: ["@svgr/webpack"],
-      },
-      {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {},
-          },
-        ],
-      },
+    devServer: {
+      port: 3000,
+    },
+
+    //------------------loaders-----------------------
+    module: {
+      rules: [
+        {
+          test: /\.css$/,
+          use: [MiniCssExtractPlugin.loader, "css-loader"],
+        },
+        {
+          test: /\.tsx?$/,
+          use: "ts-loader",
+          exclude: /node_modules/,
+        },
+        {
+          test: /\.svg$/,
+          use: ["@svgr/webpack"],
+        },
+        {
+          test: /\.(png|jpg|gif)$/,
+          use: [
+            {
+              loader: "file-loader",
+              options: {},
+            },
+          ],
+        },
+      ],
+    },
+
+    //------------------resolves-----------------------
+    resolve: {
+      extensions: [".tsx", ".ts", ".js"],
+    },
+
+    //------------------plugins-----------------------
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, "public", "index.html"),
+      }),
+      new webpack.ProgressPlugin(),
+      new MiniCssExtractPlugin({ filename: "[name].css" }),
     ],
-  },
+  };
 
-  resolve: {
-    extensions: [".tsx", ".ts", ".js"],
-  },
-
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "public", "index.html"),
-    }),
-    new webpack.ProgressPlugin(),
-    new MiniCssExtractPlugin({ filename: "[name].css" }),
-  ],
+  return config;
 };
-
-export default config;

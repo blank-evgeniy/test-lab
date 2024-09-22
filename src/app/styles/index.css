@@ -33,3 +33,7 @@ button {
   background-color: inherit;
   cursor: pointer;
 }
+
+html {
+  scroll-behavior: smooth;
+}

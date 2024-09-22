@@ -6,7 +6,7 @@ import "./Qeustions.css";
 const Qeustions = () => {
   return (
     <div className="container">
-      <section className="questions">
+      <section className="questions" id="questions">
         <h2 className="questions__title">Вопросы и ответы</h2>
         <div className="questions__list">
           <Accordion items={QuestionsList} />

@@ -33,7 +33,11 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
               className="accordion__head"
             >
               <p className="accordion__title">{item.title}</p>
-              {isCollapsed ? <CloseIcon /> : <OpenIcon />}
+              {isCollapsed ? (
+                <CloseIcon className="accordion__btn" />
+              ) : (
+                <OpenIcon className="accordion__btn" />
+              )}
             </div>
 
             {isCollapsed && (

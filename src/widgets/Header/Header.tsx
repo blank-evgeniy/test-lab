@@ -21,22 +21,22 @@ const Header = () => {
       <nav className="header__navigation">
         <ul className="header__links">
           <li>
-            <a className="header__link" href="#">
+            <a className="header__link" href="#plan">
               Как это работает
             </a>
           </li>
           <li>
-            <a className="header__link" href="#">
+            <a className="header__link" href="#third-block">
               3-й блок
             </a>
           </li>
           <li>
-            <a className="header__link" href="#">
+            <a className="header__link" href="#questions">
               Вопросы и ответы
             </a>
           </li>
           <li>
-            <a className="header__link" href="#">
+            <a className="header__link" href="#form">
               Форма
             </a>
           </li>
@@ -55,28 +55,44 @@ const Header = () => {
           <ul className="header-mobile__links">
             <hr className="line" />
             <li>
-              <a className="header-mobile__link" href="#">
+              <a
+                onClick={() => setIsOpen(false)}
+                className="header-mobile__link"
+                href="#plan"
+              >
                 Как это работает
                 <MenuLink />
               </a>
             </li>
             <hr className="line" />
             <li>
-              <a className="header-mobile__link" href="#">
+              <a
+                onClick={() => setIsOpen(false)}
+                className="header-mobile__link"
+                href="#third-block"
+              >
                 3-й блок
                 <MenuLink />
               </a>
             </li>
             <hr className="line" />
             <li>
-              <a className="header-mobile__link" href="#">
+              <a
+                onClick={() => setIsOpen(false)}
+                className="header-mobile__link"
+                href="#questions"
+              >
                 Вопросы и ответы
                 <MenuLink />
               </a>
             </li>
             <hr className="line" />
             <li>
-              <a className="header-mobile__link" href="#">
+              <a
+                onClick={() => setIsOpen(false)}
+                className="header-mobile__link"
+                href="#form"
+              >
                 Форма
                 <MenuLink />
               </a>

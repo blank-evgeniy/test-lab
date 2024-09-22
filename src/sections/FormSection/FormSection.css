@@ -49,3 +49,9 @@
 .form-section__checkbox-label {
   padding-left: 16px;
 }
+
+@media screen and (max-width: 520px) {
+  .form-section__form {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,6 +1,7 @@
 .info-block {
   padding: 68px 0;
-  width: 1216px;
+  max-width: 1216px;
+  width: 100%;
   margin: 0 auto;
 
   display: grid;
@@ -18,4 +19,11 @@
 
 .info-block__section-content {
   line-height: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .info-block {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }

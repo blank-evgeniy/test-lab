@@ -1,7 +1,8 @@
 .reviews {
   padding-top: 25px;
   padding-bottom: 45px;
-  width: 1216px;
+  max-width: 1216px;
+  width: 100%;
   margin: 0 auto;
 }
 
